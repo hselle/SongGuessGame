@@ -1,24 +1,10 @@
+Welcome!
 
-     ,-----.,--.                  ,--. ,---.   ,--.,------.  ,------.
-    '  .--./|  | ,---. ,--.,--. ,-|  || o   \  |  ||  .-.  \ |  .---'
-    |  |    |  || .-. ||  ||  |' .-. |`..'  |  |  ||  |  \  :|  `--, 
-    '  '--'\|  |' '-' ''  ''  '\ `-' | .'  /   |  ||  '--'  /|  `---.
-     `-----'`--' `---'  `----'  `---'  `--'    `--'`-------' `------'
-    ----------------------------------------------------------------- 
+Song Guess Game is a web application built primarily using Ruby On Rails and Javascript. The goal of the game is to correctly guess the
+song which the computer will sing (poorly) for you. Create a profile and get started! Song Guess Game will keep track of your stats 
+ad display them in your profile page. Good luck!
 
-
-Welcome to your Rails project on Cloud9 IDE!
-
-To get started, just do the following:
-
-1. Run the project with the "Run Project" button in the menu bar on top of the IDE.
-2. Preview your new app by clicking on the URL that appears in the Run panel below (https://final-project-hselle.c9users.io/).
-
-Happy coding!
-The Cloud9 IDE team
+Known Issues: Musixmatch API usage out of date, crashes when an attempt is made to load certain songs. UNSECURE DATABASE, USE ONLY NAIVE
+USERNAMES AND PASSWORDS.
 
 
-## Support & Documentation
-
-Visit http://docs.c9.io for support, or to learn more about using Cloud9 IDE. 
-To watch some training videos, visit http://www.youtube.com/user/c9ide
