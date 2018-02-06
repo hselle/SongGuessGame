@@ -53,7 +53,7 @@ class GamesController < ApplicationController
         choices_indexes = get_four_rand_numbers(songs.length)
         @songs_choices = [songs[choices_indexes[0]], songs[choices_indexes[1]], songs[choices_indexes[2]], songs[choices_indexes[3]]]
         @answer_song = @songs_choices[rand(0...4)]
-        # print @songs_choices
+        print @songs_choices
         print @answer_song[0]
         print @answer_song[1]
         session[:correct_artist => @answer_song[0]]
@@ -112,10 +112,11 @@ class GamesController < ApplicationController
        
     def get_lyrics(track_id)
         key = 'e80416123e947ffba96dbd43c9ba2a7f'
-
+        
         uri = URI.parse("https://api.musixmatch.com/ws/1.1/track.lyrics.get?format=json&apikey=#{key}&track_id=#{track_id}")
         lyrics_response = Net::HTTP.get_response(uri)
         parsed_json = JSON.parse(lyrics_response.body)
+        puts parsed_json
         lyrics = parsed_json['message']['body']['lyrics']['lyrics_body']
         return lyrics
     end
