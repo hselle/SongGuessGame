@@ -4,7 +4,6 @@ Song Guess Game is a web application built primarily using Ruby On Rails and Jav
 song which the computer will sing (poorly) for you. Create a profile and get started! Song Guess Game will keep track of your stats 
 ad display them in your profile page. Good luck!
 
-Known Issues: Musixmatch API usage out of date, crashes when an attempt is made to load certain songs. UNSECURE DATABASE, USE ONLY NAIVE
-USERNAMES AND PASSWORDS.
+Known Issues: UNSECURE DATABASE, USE ONLY NAIVE USERNAMES AND PASSWORDS.
 
 
