@@ -100,12 +100,14 @@ class GamesController < ApplicationController
             
     def get_track_id(artist, song)
         key = 'e80416123e947ffba96dbd43c9ba2a7f'
+        puts artist
+        puts song
         uri = URI.parse("https://api.musixmatch.com/ws/1.1/track.search?format=json&q_artist=#{artist}&q_track=#{song}&quorum_factor=1&apikey=#{key}")
 
         track_id_response = Net::HTTP.get_response(uri)
         # print response.body
         parsed_json = JSON.parse(track_id_response.body)
-        print parsed_json
+        #print parsed_json
         track_id = parsed_json['message']['body']['track_list'][0]['track']['track_id']
         return track_id
     end
