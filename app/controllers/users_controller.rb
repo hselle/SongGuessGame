@@ -69,7 +69,11 @@ class UsersController < ApplicationController
 
         if @user.wins.include?("w") || @user.losses.include?("l")
             correct_answers_number = @user.wins.length
-            incorrect_answers_number = @user.losses.length
+            if @user.losses.length == 0
+                incorrect_answers_number = 1
+            else
+                incorrect_answers_number = @user.losses.length
+            end
             if correct_answers_number != 0 || incorrect_answers_number != 0
                 @correct_inccorect_percentage = "#{((correct_answers_number.to_f/incorrect_answers_number)*100).round}%"
             else 
